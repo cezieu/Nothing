@@ -54,6 +54,12 @@ app.get('/about',(req, res) => {
 		currentYear: new Date().getFullYear()
 	});
 });
+app.get('/p',(req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Page Page',
+		currentYear: new Date().getFullYear()
+	});
+});
 app.get('/bad', (req, res) => {
 	res.send({
 		errorMessage: 'Bad request'
